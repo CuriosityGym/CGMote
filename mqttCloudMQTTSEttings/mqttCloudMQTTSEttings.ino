@@ -155,10 +155,10 @@ void setup() {
   }*/
   debugPort.println("Bringing up ESP!"); 
   esp.enable();
-  delay(500);
+  delay(2000);
   debugPort.println("Resetting up ESP!"); 
   esp.reset();
-  delay(500);
+  delay(2000);
   while(!esp.ready())
   {
    debugPort.println("ESP Not Ready!"); 
@@ -185,7 +185,7 @@ void setup() {
   debugPort.println("ARDUINO: setup wifi");
   esp.wifiCb.attach(&wifiCb);
 
-  esp.wifiConnect("ssid","pwd");
+  esp.wifiConnect("CuriosityGym","#3Twinkle3#");
 
 
   debugPort.println("ARDUINO: system started");
